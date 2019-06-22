@@ -196,6 +196,16 @@
 			<groupId>org.openmrs.module</groupId>
 			<artifactId>uiframework-api</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpmime</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -226,6 +236,16 @@
 				<filtering>true</filtering>
 			</testResource>
 		</testResources>
-	</build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

@@ -418,6 +418,18 @@
 				<version>${webservices.restModuleVersion}</version>
 				<scope>test</scope>
 			</dependency>
+
+			<!-- upgrade to Apache HTTP Components to enable sending of multipart data -->
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpmime</artifactId>
+				<version>4.5</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpcore</artifactId>
+				<version>4.4.5</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
